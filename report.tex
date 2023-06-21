@@ -1,6 +1,4 @@
 \documentclass[12pt]{article}
-\usepackage{lingmacros}
-\usepackage{tree-dvips}
 \begin{document}
 
 \title{Options Pricing using FFT }
@@ -15,11 +13,23 @@ This project will aim to research the Fast Fourier Transform algorithm and a pot
 
 \clearpage
 \section{Fourier Transform}
+The fourier series can be used to rewrite a given function in terms of a series of trigonometric functions.
+The equation to do so is given by:
+$$f(x) = \frac{a_0}{2} + \sum^\infty_{k=1}a_k cos(\frac{2\pi kx}{T}) + \sum^\infty_{k=1}b_k sin(\frac{2\pi kx}{T}) $$
+for some set of Fourier coefficients $a_k$ and $b_k$ defined respectively:
+$$a_k = \frac{2}{T}\int^T_0 f(x)cos(\frac{2\pi kx}{T})dx$$
+$$b_k = \frac{2}{T}\int^T_0 f(x)sin(\frac{2\pi kx}{T})dx$$
 
 \clearpage
 \section{Fast Fourier Transform}
 
+
+
+
+
 \clearpage
 \section{Options Pricing}
+
+
 
 \end{document}
